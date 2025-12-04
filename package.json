@@ -2,12 +2,12 @@
   "name": "ripe-dx",
   "version": "0.0.0",
   "scripts": {
-  "ng": "ng",
-  "start": "ng serve",
-  "build": "ng build",
-  "watch": "ng build --watch --configuration development",
-  "test": "ng test",
-  "serve:ssr:RIPE-DX": "node dist/ripe-dx/server/server.mjs"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "serve:ssr": "node dist/ripe-dx/server/server.mjs"
   },
   "private": true,
   "dependencies": {
