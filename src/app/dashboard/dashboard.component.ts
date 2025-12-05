@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit {
   }
 
   getLatestTelemetry(): void {
-    this.http.get<any[]>('https://esp-eva.onrender.com/api/telemetry')
+    this.http.get<any[]>('https://esp-eva.onrender.com')
       .subscribe({
         next: (data) => {
           if (data.length > 0) {
