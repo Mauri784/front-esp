@@ -4,7 +4,14 @@
   align-items: center;
   min-height: 100vh;
   padding: 1rem;
-  background: #0d0d0d;
+
+  /* 🌌 Fondo degradado oscuro */
+  background: linear-gradient(
+    135deg,
+    #0a0a0a,
+    #111827,
+    #1f2937
+  );
 }
 
 .login-card {
