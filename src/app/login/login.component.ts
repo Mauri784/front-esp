@@ -15,8 +15,8 @@ export class LoginComponent {
   password: string = '';
 
   users = [
-    { username: 'law', password: 'corazon' },
-    { username: 'zoro', password: 'kuina' }
+    { username: 'Yugi', password: 'Moto' },
+    { username: 'user', password: '0784' }
   ];
 
   constructor(private router: Router) {}
