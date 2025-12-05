@@ -1,60 +1,77 @@
+/* 🌙 CONTENEDOR GENERAL */
 .dashboard-container {
   min-height: 100vh;
-  background: #f1f5f9;
-  padding: 16px;
+  padding: 20px;
+  background: linear-gradient(135deg, #0a0a0a, #111827, #1f2937);
+  color: #e5e7eb;
+  font-family: 'Inter', sans-serif;
 }
 
+/* 🌙 TÍTULO */
 .title {
   text-align: center;
-  color: #1e3a8a;
-  margin-bottom: 20px;
+  color: #c084fc;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-shadow: 0 0 12px rgba(192,132,252,0.4);
 }
 
-/* ✅ MOBILE FIRST */
+/* GRID */
 .cards-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
+  gap: 20px;
 }
 
+/* 🌙 CARD DARK GLASS */
 .card {
-  background: white;
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(8px);
+  padding: 22px;
   border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(192,132,252,0.4);
+}
+
+/* TITULOS */
 .card h2 {
-  font-size: 18px;
+  font-size: 1.2rem;
+  color: #e5e7eb;
   margin-bottom: 10px;
+  font-weight: 500;
 }
 
+/* VALORES */
 .value {
-  font-size: 26px;
+  font-size: 2rem;
   font-weight: bold;
-  color: #2563eb;
+  color: #c084fc; /* morado moderno */
+  text-shadow: 0 0 10px rgba(192,132,252,0.5);
 }
 
+/* TIMESTAMP */
 .timestamp {
-  font-size: 12px;
-  color: gray;
+  font-size: 0.8rem;
+  color: #9ca3af;
 }
 
-/* ✅ TABLET */
+/* TABLET */
 @media (min-width: 768px) {
   .cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* ✅ DESKTOP */
+/* DESKTOP */
 @media (min-width: 1024px) {
   .cards-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-h2 {
-  color: #333 !important;
 }
